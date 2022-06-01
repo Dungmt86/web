@@ -1,0 +1,52 @@
+.sidebar{
+
+
+}
+
+.box-animation{
+    background-color: yellow;
+    float: left;
+    width: 150px;
+    height: 50px;
+    transition: all 300ms;
+
+    animation: moveBox;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.box-animation:hover{
+   background-color: rebeccapurple;
+    /*  transform:translateX(-200px); */
+    /* transform:translateY(-200px);*/
+    /* transform:scale(1.5);*/
+     transform:rotate(90deg);
+    /* transform: translate(100px,100px);*/
+}
+
+/*@keyframes moveBox {*/
+/*    !*from{*!*/
+/*    !*    transform: translateX(0);*!*/
+/*    !*}*!*/
+/*    !*to{*!*/
+/*    !*    transform: translateX(300px);*!*/
+/*    !*}*!*/
+/*0%{*/
+/*    transform: translateX(0);*/
+/*}*/
+/*25%{*/
+/*        transform: translate(200px,0);*/
+/*}*/
+/*    50%{*/
+/*        transform: translate(200px,200px);*/
+/*    }*/
+/*    75%{*/
+/*        transform: translate(0px,200px);*/
+/*    }*/
+/*    100%{*/
+/*        transform: translate(0px,0px);*/
+/*    }*/
+/*}*/
+
+
+

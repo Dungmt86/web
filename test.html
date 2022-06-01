@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test layout</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>layout trang chu</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet/sesion3.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css"/>
+
+        <link rel="stylesheet" href="CSS/test.css" />
+        <link rel="stylesheet" href="CSS/lienhe.css" />
+        <link rel="stylesheet" type="text/css" href="css/home_detail.css"/>
+    </head>
+<body>
+<header class="section header">
+    <he class="container">
+        <div class="khoi-slide">
+            <div class="cac-slide">
+                <div class="slide active"><img src="img/1.png" ></div>
+                <div class="slide"><img src="img/2.png" ></div>
+                <div class="slide"><img src="img/3.png"></div>
+                <div class="slide"><img src="img/4.png" ></div>
+            </div>
+            <div class="nut-slide">
+                <span id="btn-prev"><i class="fas fa-chevron-left"></i></span>
+                <span id="btn-next"><i class="fas fa-chevron-right"></i></span>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+</header>
+
+<section class="section footer">
+    <div class="container">
+        <div class="footer_address">
+            Tr? s? chÃ­nh: So 8 Ton That Thuyet
+            Email: contact@apptech
+            Copyright Â© group4_t2203E
+        </div>
+        <div class="footer_logo">
+            logo
+        </div>
+    </div>
+
+    <button class="nut-mo-chatbox" onclick="moForm()">Chat</button>
+    <div class="Chatbox" id="myForm">
+        <form action="" class="form-container">
+            <h1>Chatbox</h1>
+
+            <label for="msg"><b>Lời Nhắn</b></label>
+            <textarea placeholder="Bạn hãy nhập lời nhắn.." name="msg" required></textarea>
+
+            <button type="submit" class="btn">Gửi</button>
+            <button type="button" class="btn nut-dong-chatbox" onclick="dongForm()">Đóng</button>
+        </form>
+    </div>
+    <script type="text/javascript" src="js/chatbox.js"></script>
+</section>
+</body>
+</html>

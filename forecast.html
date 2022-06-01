@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>forecast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="CSS/lab4.css">
+
+
+</head>
+<body>
+<header class="section header">
+  <div class="container">
+    <div class="logo">
+      <a class="logo-link" href="#"> Generis Framework</a>
+      <p>Suports HTML5 & resposive design</p>
+    </div>
+    <div class="toplinks">
+      <ul>
+        <li><a href="#">Sample</a> </li>
+        <li><a href="#">Layouts</a> </li>
+        <li><a href="#">Templates</a> </li>
+        <li><a href="#">ContactW</a> </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<nav class="section nav">
+  <div class="container">
+    <ul class="menu">
+      <li><a href="#">Category #1</a> </li>
+      <li><a href="#">Category #2</a> </li>
+      <li><a href="#">Category #3</a> </li>
+      <li><a href="#">Category #4</a> </li>
+      <li class="last"><a href="#">Get Genesis Now !</a> </li>
+    </ul>
+  </div>
+</nav>
+<section class="section main columns-right">
+  <div class="container">
+    <article class="content">
+      <ul class="forecast" id="forecast">
+
+      </ul>
+    </article>
+    <aside class="sidebar">
+      Sidebar
+    </aside>
+  </div>
+</section>
+<footer class="section footer">
+  <div class="container">
+    footer
+  </div>
+</footer>
+
+<script type="text/javascript">
+  function loadingWeather () {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+      // console.log("change state:"+this.readyState);
+      if (this.readyState == 4 && this.status == 200) { //da gui len hoan thanh va nhan dc ket qua
+        var currentWeather = JSON.parse(xhttp.responseText);
+        var list = currentWeather.list;
+        for (var i=0;i<list.length;i++){
+          var ngaygio = list[i].dt_txt;
+          var nd = list[i].main.temp;
+          var we = list[i].weather[0].description;
+          var ic = list[i].weather[0].icon
+
+          var li_html = "     <li>\n" +
+                  "          <p>"+ngaygio+"</p>\n" +
+                  "          <h3>"+nd+"<sup>o</sup>C</h3>\n" +
+                  "          <p>"+we+"</p>\n" +
+                  "          <img src=\"https://openweathermap.org/img/wn/"+ic+"@2x.png\"/>\n" +
+                  "        </li>";
+          document.getElementById("forecast").innerHTML += li_html;
+
+
+        }
+
+      }
+    };
+    xhttp.open("GET", "https://api.openweathermap.org/data/2.5/forecast?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric", true);
+    xhttp.send();
+  }
+
+  loadingWeather();
+
+</script>
+</body>
+</html>

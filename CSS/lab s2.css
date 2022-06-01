@@ -1,0 +1,48 @@
+body {
+    background-color: white;
+    font-size:26px;
+    font-family: "Times New Roman";
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+hr{
+    color:purple;
+}
+
+h3{
+    float: left;
+}
+
+h4{
+    text-align:right;
+    font-weight: 400;
+    font-size:20px;
+}
+
+
+h5{
+    color:purple;
+    text-align:left;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: 400;
+
+}
+h6{
+    text-align:left;
+    font-style: normal;
+
+    font-weight: 400;
+}
+table{
+    font-style: normal;
+    width: 800px;
+    font-size:20px;
+
+}
+p{
+    font-style: normal;
+    font-size:20px;
+    text-align:justify;
+}

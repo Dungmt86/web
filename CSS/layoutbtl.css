@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    font-size: 16px;
+    font-family: "Roboto Thin";
+    font-weight: 400;
+    text-align: left;
+    color: #333333;
+}
+.section {
+    float:left;
+    width: 100%;
+}
+.header{
+
+    position:fixed;
+    height:130px;
+    background-color: deepskyblue;
+    padding: 10px 0;
+}
+
+.main{
+    margin-top:150px;
+    float: left;
+
+}
+.footer{
+    background-color: deepskyblue;
+    float: left;
+    padding: 20px 0;
+    color: red;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.logo{
+    float:left;
+    width:100%
+}
+.header_logo{
+    float: left;
+    width:130px;
+    margin-left: 30px;
+}
+.header_slogan{
+    float:left;
+    margin-top:30px;
+    width:1000px;
+    font-style: italic;
+    font-family: "Times New Roman";
+    color: chartreuse;
+    font-size: 20px;
+    text-shadow: black 1px;
+    text-shadow: #ff253a;
+
+}
+.menu{
+    width:85%;
+    float:left;
+    margin-left:5px;
+    color:white;
+}
+.menu li{
+    list-style: none;
+    float: left;
+    margin-right: 25px;
+}
+.menu li a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    color:white;
+}
+.menu li a:hover{
+    color:pink;
+}
+.menu i{
+    margin-right:10px;
+}
+.dang_nhap{
+    float: right;
+    background-color: chartreuse;
+}
+.dang_ky{
+    float: right;
+    background-color: chartreuse;
+}
+
+.footer_address{
+    float: left;
+    width: 200;
+}
+.footer_logo{
+
+    right: 30px;
+    bottom: 5px;
+}

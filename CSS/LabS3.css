@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("../image/wallpaper.jpg");
+
+}
+img{
+    max-width: 70%;
+}
+#s1{
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    background-color: #a7b2d2;
+    margin: 0 40px 0 ;
+    padding: 30px;
+    width: 880px;
+}
+#s2{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #a7b2d2;
+    margin: 0 40px 0 ;
+    padding: 30px;
+    width: 880px;
+}
+div{
+    float: left;
+    margin-top: -160px;
+    background-color: #d6dae8;
+    margin-left:40px ;
+}
+div #s3{
+    margin: 40px;
+}
+.t1{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 30px;
+}
+.t2{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    padding: 30px;
+}
+.t3{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    padding: 30px;
+    line-height: 1.5;
+}
+.d1{
+    float: left;
+    width: 650px;
+    margin: 0px 10px 0 0px;
+    background-color: #e5e8ef;
+    padding: 70px 20px 55px 20px;
+}

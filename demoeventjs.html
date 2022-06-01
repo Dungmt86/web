@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo event</title>
+</head>
+<body>
+<button type="button" onclick="clickMe()"
+                      onmouseenter="hoverMe()"
+                      onmouseleave="outMe()"
+
+    >Click me </button>
+<input onkeypress="KeyPress()" onkeydown="KeyDown()" onkeyup="KeyUp()" onchange="changeV(this)" type="text" placeholder="Enter" />
+<select name="city" onchange="changeV(this)">
+    <option value="HN">HN</option>
+    <option value="SG">SG</option>
+</select>
+
+<script type="text/javascript" src="js/demoevenjs.js"></script>
+
+<script type="text/javascript" src="js/jsvietlot.js"></script>
+</body>
+</html>

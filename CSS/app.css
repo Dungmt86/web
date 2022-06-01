@@ -1,0 +1,47 @@
+
+body{
+    background-color: beige;
+    background-image: url("../images/ngoctrinh.jpg");
+    background-size: cover;
+
+}
+
+h1{
+    color:red;
+}
+
+p{
+    color:green;
+    font-size:26px;
+    line-height:30px;
+    text-align:justify; /* left right center */
+    text-transform: uppercase; /* lowercase capitallize none */
+    text-decoration: none;/* line-through overline none */
+    text-indent:50px;
+    font-weight: 400;
+    font-family: "Times New Roman";
+
+    /* text-shadow: 0 0 5px red; */
+    width:600px;
+}
+
+b{
+    color:red;
+}
+
+p b{
+    color:green;
+}
+
+p i > b{
+    color:green;
+}
+
+a{
+    color:deeppink;
+    text-decoration: none;
+}
+
+a:hover{
+    color:yellowgreen;
+}

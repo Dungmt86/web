@@ -1,0 +1,92 @@
+.header {
+    background-size: #ffffff;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 20px 0;
+}
+
+.logo{
+    float: left;
+    width: 40%;
+}
+
+.toplinks{
+    float: right;
+    width: 50%;
+}
+
+.toplinks ul{
+    float: right;
+}
+
+.toplinks ul li{
+    float: left;
+    list-style: none;
+    margin-left: 25px;
+}
+a{
+    text-decoration: none;
+}
+
+.logo .logo-link{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.logo p{
+    font-size: 15px;
+}
+.toplinks a{
+    font-weight: 500;
+    line-height: 51px;
+    font-size: 15px;
+}
+
+.nav {
+    background-color: white;
+    padding: 20px 0;
+}
+
+.menu li{
+    list-style: none;
+    float: left;
+    margin-right: 25px;
+}
+
+.menu li.last{
+    float: right;
+    margin-right: 0;
+}
+
+.menu li a{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.main{
+    margin-top: 30px;
+}
+
+.columns-right .content{
+    background-color: yellowgreen;
+    padding: 20px;
+    width: calc(66.67% - 55px);
+    margin-right: 15px;
+}
+
+.columns-right .sidebar{
+    background-color: antiquewhite;
+    padding: 20px;
+    width: calc(33.33% - 55px);
+    margin-left: 15px;
+
+}
+
+.footer i{
+    font-size: 50px;
+    color: deeppink;
+}
+
+.footer i:hover{
+    color: green;
+}
+

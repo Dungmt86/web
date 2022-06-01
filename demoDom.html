@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>deomo dom</title>
+</head>
+<body>
+    <h1 id="heading1">  Giá xăng dầu lại tăng giảm bất thường</h1>
+    <p id="paragraph1"> Neymar hiện vẫn còn hợp đồng với PSG đến năm 2025 và từng tuyên bố không muốn rời đội bóng thủ đô Paris. Tuy nhiên, tiền đạo người Brazil được cho là đã bị điền tên vào danh sách thanh lý sau khi nhà vô địch Ligue 1 giữ chân thành công Kylian Mbappe</p>
+    <button type="button" onclick="clickMe()">Click me</button>
+    <ul id="list"> </ul>
+    <button type="button" >show list</button>
+
+    <input id="inputMin" type="number" min ="1" placeholder="Input minutes..."/>
+
+    <h1>
+        <span id = "min">10</span>:<span id = "sec">00</span>
+    </h1>
+    <button type="button" onclick="timer()">Start timer</button>
+
+    <script type="text/javascript">
+        var x = 0;
+        function clickMe (){
+            x+=45;
+            var h1obj = document.getElementById("heading1");
+            // h1obj.style.color = "red";
+            // h1obj.style.transform = "rotate("+x+"deg)";
+            h1obj.style.backgroundColor = "yellow";
+            //text
+            h1obj.innerText = "Xin chào các bạn";
+            //html
+            h1obj.innerHTML = "<i> Hello World!</i>";
+        }
+        function showList(){
+            var students = [
+                {
+                    name: "Nguyễn Văn An",
+                    age: 18,
+                },
+                {
+                    name: "Nguyễn Thị Huyền",
+                    age: 19,
+                },
+            ];
+            var ulobj = document.getElementById("list");
+            var xyzHTML = "";
+            for(var i=0;i<students.length;i++){
+                var xyz = "<li>Name: "+students[i].name+ "</li>";
+                ulobj.innerHTML += xyz;
+            }
+            ulobj.innerHTML = xyzHTML;
+        }
+
+        var time = {
+            min:10,
+            sec:0
+        }
+        function timer(){
+            var im = document.getElementById("inputMin");
+            time.min = im.value;
+            time.sec = 0;
+            var tm = setInterval(function (){
+                //in ra thời gian
+                var minSpan = document.getElementById("min");
+                var secSpan = document.getElementById("sec");
+                minSpan.innerText = time.min>=10?time.min:"0"+time.min;
+                secSpan.innerText = time.sec>=10?time.sec:"0"+time.sec;
+                // giảm second
+                time.sec--;
+                if(time.sec<0){
+                    time.sec = 59;
+                    time.min--;
+                }
+                // khi min ve 0 dung
+                if(time.min <0){
+                    clearInterval(tm);
+                }
+
+            },1000);
+        }
+
+    </script>
+</body>
+</html>

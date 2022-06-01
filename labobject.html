@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab object</title>
+</head>
+<body>
+<input type="text" onkeyup="inputName(this)"  placeholder="Name..." />
+<input type="number" onkeyup="inputAge(this)"  placeholder="Age..." />
+<input type="text" onkeyup="inputAddress(this)"  placeholder="Address..." />
+<input type="text" onkeyup="inputGender(this)" placeholder="Gender..." />
+<button type="submit" onclick="submit()">Submit</button>
+<script type="text/javascript">
+    var sv = {
+        name:"",
+        age:"",
+        address:"",
+        gender:"",
+    }
+
+    function inputName(e){
+        sv.name = e.value;
+    }
+    function inputAge(e){
+        sv.age = e.value;
+    }
+
+    function inputAddress(e){
+        sv.address = e.value;
+    }
+
+    function inputGender(e){
+        sv.gender = e.value;
+    }
+
+    function submit(){
+        console.log(sv);
+    }
+
+
+</script>
+
+
+</body>
+</html>

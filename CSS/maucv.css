@@ -1,0 +1,59 @@
+
+.TopCV{
+    background-image: url(../images/maucv1.png);
+    background-size: 100%;
+    padding:20px;
+    width: 1200px;
+    height: 400px;
+
+}
+
+.note1{
+    margin-top: 50px;
+    left: 280px;
+}
+
+a{
+    text-decoration: none   ;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.box1{
+    margin-top: 50px;
+    width: 140px;
+    height: 30px;
+    background:greenyellow;
+    padding:24px 26px;
+    color: blue;
+}
+
+.box1 :hover {
+    background: white;
+}
+
+h4{
+    color: yellow;
+}
+
+
+.tieude {
+    color: #042ba1;
+    text-align:center;
+    margin-top: 20px;
+
+}
+
+.video {
+    width: 40%;
+    float: left;
+}
+
+.phaivideo {
+    margin-top: 70px;
+    width: 45%;
+    float: right;
+    margin-left: 30px;
+}
+
+
