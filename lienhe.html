@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test layout</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>layout trang chu</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet/sesion3.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css"/>
+
+        <link rel="stylesheet" href="CSS/layoutbtl.css" />
+        <link rel="stylesheet" href="CSS/lienhe.css" />
+        <link rel="stylesheet" type="text/css" href="css/home_detail.css"/>
+    </head>
+<body>
+<header class="section header">
+    <div class="container">
+        <div class="logo">
+            <div class="header_logo">
+                <img src="images/logo2.png" width="120"/>
+            </div>
+            <div class="header_slogan">
+                Chieu mo nhan tai <br>
+                Viec tot Luong cao
+            </div>
+        </div>
+        <div class="menu">
+            <ul class="menu">
+                <li><a href="#"> <i class="fas fa-house"></i>Trang chu</a></li>
+                <li><a href="#">Viec lam</a></li>
+                <li><a href="#">Mau CV</a></li>
+                <li><a href="#">Nha tuyen dung</a></li>
+                <li><a href="#">Ung vien tim viec</a></li>
+                <li><a href="#">Lien he</a></li>
+                <li><a href="#">Cam nang cong viec</a></li>
+            </ul>
+        </div>
+        <div class="dang_nhap">
+            /dang nhap
+        </div>
+        <div class="dang_ky">
+            dang ky
+        </div>
+    </div>
+</header>
+
+<section class="section main">
+    <div class="container">
+
+        <div class ="title">
+            <h1> Liên hệ </h1> <br><br>
+            <p> Cảm ơn bạn đã vào thăm trang Web của chúng tôi, đây là website việc làm lớn nhất tại Việt Nam hiện nay. </p> <br>
+            <p></p>
+            <p> Nếu bạn có thắc mắc trong quá trình sử dụng trang web của chúng tôi, mời bạn vào trang <a target="blank" href="#">Hỏi Đáp</a> để xem hướng dẫn sử dụng và giải quyết những vấn đề thường gặp.</p><br>
+
+            <p> Đối với những vấn đề khác, mời bạn điền vào <a target="blank" href="#">mẫu thư liên lạc</a> và gửi đi cho chúng tôi theo địa chỉ. Các chuyên viên tư vấn  sẽ trả lời bạn trong thời gian sớm nhất.</p>
+            <p></p>
+
+        </div>
+
+        <div class="left">
+            <div class="lienhe">
+                <h3> Thông tin liên hệ </h3><br>
+                <div class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    8 Tôn Thất Thuyết, Mỹ Đình, Nam Từ Liêm, Hà Nội
+                </div>
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                    024 3768 9230
+                </div>
+
+                <div class="icon">
+                    <i class="fas fa-mail-bulk"></i>
+                    Nhom4T2203E@gmail.com <br>
+                </div>
+            </div>
+            <div class="googlemap">
+                <div id="map" style="width:400px;height:400px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0969666091737!2d105.78049781485439!3d21.02880578599834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab4cd0c66f05%3A0xea31563511af2e54!2zOCBUw7RuIFRo4bqldCBUaHV54bq_dCwgTeG7uSDEkMOsbmgsIEPhuqd1IEdp4bqleSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1653365901459!5m2!1svi!2s" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <h3>Gửi đến: Nhom4T2203E@gmail.com</h3> <br>
+
+            <form method="get" action="#">
+                <div class="form-group">
+                    <label>Tên của bạn</label>
+                    <input type="text" name="Tên:" maxlength="100" placeholder="Vui lòng nhập tên.." required />
+                </div>
+
+                <div class="form-group">
+                    <label>Địa chỉ</label>
+                    <input type="text" name="Địa chỉ:" maxlength="100" placeholder="Vui lòng nhập địa chỉ.." required />
+                </div>
+
+                <div class="form-group">
+                    <label>Điện thoại</label>
+                    <input type="text" name="Điện thoại:" maxlength="100" placeholder="Vui lòng nhập số điện thoại.." required />
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="Email" placeholder="email.." required />
+                </div>
+
+                <div class="form-group">
+                    <label>Nội dung ý kiến:</label><br>
+                    <textarea name="introduction" cols="70" rows="24" placeholder="introduction...">  </textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="Submit">Gửi</button>
+                    <button type="reset">Reset</button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+
+    </div>
+</section>
+
+<section class="section footer">
+    <div class="container">
+        <div class="footer_address">
+            Tr? s? chÃ­nh: So 8 Ton That Thuyet
+            Email: contact@apptech
+            Copyright Â© group4_t2203E
+        </div>
+        <div class="footer_logo">
+            logo
+        </div>
+    </div>
+
+    <button class="nut-mo-chatbox" onclick="moForm()">Chat Với Nhóm 4 T2203E</button>
+    <div class="Chatbox" id="myForm">
+        <form action="" class="form-container">
+            <h1>Chatbox</h1>
+
+            <label for="msg"><b>Lời Nhắn</b></label>
+            <textarea placeholder="Bạn hãy nhập lời nhắn..." name="msg" required></textarea>
+
+            <button type="submit" class="btn">Gửi</button>
+            <button type="button" class="btn nut-dong-chatbox" onclick="dongForm()">Đóng</button>
+        </form>
+    </div>
+    <script type="text/javascript" src="js/chatbox.js"></script>
+
+</section>
+</body>
+</html>
